@@ -41,12 +41,12 @@ int count_consecutive(stack<int> s, int digit){
         int w = s.top();
         if(w==digit){
             n++;
-        }
-        else{
-            //check if current consecutive streak is > max
+			//check if current consecutive streak is > max
             if(n > max){
                 max = n;
             }
+        }
+        else{
             //re-start the counter
             n = 0;
         }
